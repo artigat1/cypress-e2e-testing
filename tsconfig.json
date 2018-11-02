@@ -16,6 +16,12 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@steve/models": [
+        "libs/models/src/index.ts"
+      ],
+      "@steve/services": [
+        "libs/services/src/index.ts"
+      ]
     }
   },
   "exclude": [

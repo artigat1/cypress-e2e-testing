@@ -1,5 +1,5 @@
 {
-  "npmScope": "@steve",
+  "npmScope": "steve",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
@@ -7,5 +7,24 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "todo": {
+      "tags": [
+        "app:module"
+      ]
+    },
+    "todo-e2e": {
+      "tags": []
+    },
+    "models": {
+      "tags": [
+        "lib:shared"
+      ]
+    },
+    "services": {
+      "tags": [
+        "lib:shared"
+      ]
+    }
+  }
 }

@@ -44,29 +44,52 @@
     "@ngrx/store": "6.1.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.10.0",
     "@angular/cli": "7.0.1",
     "@angular/compiler-cli": "^7.0.0",
     "@angular/language-service": "^7.0.0",
-    "@angular-devkit/build-angular": "~0.10.0",
     "@ngrx/store-devtools": "6.1.0",
-    "ngrx-store-freeze": "0.2.4",
+    "@nrwl/builders": "7.0.0",
     "@nrwl/schematics": "7.0.0",
-    "jasmine-marbles": "0.4.0",
+    "@types/faker": "^4.1.4",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
+    "@types/jest": "^23.0.0",
+    "@types/jquery": "3.3.6",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "cypress": "^3.1.0",
+    "faker": "^4.1.0",
     "jasmine-core": "~2.99.1",
+    "jasmine-marbles": "0.4.0",
     "jasmine-spec-reporter": "~4.2.1",
+    "jest": "^23.0.0",
+    "jest-preset-angular": "6.0.1",
     "karma": "~3.0.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ngrx-store-freeze": "0.2.4",
+    "prettier": "1.13.7",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.3",
-    "prettier": "1.13.7"
+    "typescript": "~3.1.3"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@apps/(.*)$": "<rootDir>/apps/$1",
+      "@libs/(.*)$": "<rootDir>/libs/$1",
+      "@steve/models": "<rootDir>/libs/models/src/index.ts",
+      "@steve/services": "<rootDir>/libs/services/src/index.ts"
+    },
+    "coverageThreshold": {
+      "global": {
+        "branches": 75,
+        "functions": 75,
+        "lines": 75
+      }
+    }
   }
 }
